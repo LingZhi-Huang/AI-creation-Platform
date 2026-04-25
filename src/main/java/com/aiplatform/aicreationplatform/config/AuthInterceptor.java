@@ -41,6 +41,6 @@ public class AuthInterceptor implements HandlerInterceptor {
         String userId = jwtUtil.getUserIdFromToken(token);
         request.setAttribute("userId", userId);
 
-        return true;// 继续处理请求
+        return true;// 继续处理请求.
     }
 }
